@@ -21,7 +21,7 @@ namespace OnionDemoProject.Application.Features.CQRSDesignPattern.Handlers
         {
             _context.Categories.Add(new Domain.Entities.Category
             {
-                CategoryName = command.CategoryName,
+                CategoryName = command.CategoryName
             });
             await _context.SaveChangesAsync();
         }
